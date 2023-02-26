@@ -1,0 +1,13 @@
+---
+title: "Online Data Collection and Management"
+output: html_document
+---
+
+.
+```{r}
+setwd("C:/Users/wweij/downloads")
+read.csv("listings.csv")
+Listings <- read.csv("listings.csv")
+
+```
+
