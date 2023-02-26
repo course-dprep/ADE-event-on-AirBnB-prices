@@ -11,5 +11,7 @@ library("readr")
 download.file("https://raw.githubusercontent.com/course-dprep/team-assignment-team3/R/listings.csv", destfile = "listings.csv")
 Listings <- read.csv("listings.csv")
 
+View(Listings)
+
 ```
 
