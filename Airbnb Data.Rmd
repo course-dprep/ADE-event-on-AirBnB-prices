@@ -1,0 +1,17 @@
+---
+title: "Online Data Collection and Management"
+output: html_document
+---
+
+.
+```{r}
+install.packages("readr")
+library("readr")
+
+download.file("https://raw.githubusercontent.com/course-dprep/team-assignment-team3/R/listings.csv", destfile = "listings.csv")
+Listings <- read.csv("listings.csv")
+
+View(Listings)
+
+```
+
