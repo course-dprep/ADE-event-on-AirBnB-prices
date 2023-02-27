@@ -1,4 +1,4 @@
-# Example of reproducible research workflow 
+# What is the relationship between Amsterdam Dance Event (ADE) and the prices of different types of Airbnb accommodations (e.g. private room, apartment, villa) in Amsterdam during the event?
 
 This is a basic example repository using Gnu make for a reproducible research workflow, as described in detail here: [tilburgsciencehub.com](http://tilburgsciencehub.com/). 
 
