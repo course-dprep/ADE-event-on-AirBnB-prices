@@ -1,11 +1,10 @@
-# What is the relationship between Amsterdam Dance Event (ADE) and the prices of different types of Airbnb accommodations (e.g. private room, apartment, villa) in Amsterdam during the event?
+# The effect of Amsterdam Dance Event (ADE) and the prices of different types of Airbnb accommodations.
 
-This is a basic example repository using Gnu make for a reproducible research workflow, as described in detail here: [tilburgsciencehub.com](http://tilburgsciencehub.com/). 
+##prject description
 
-The main aim of this to have a basic structure, which can be easily adjusted to use in an actual project.  In this example project, the following is done: 
-1. Download and prepare data
-2. Run some analysis
-3. Present results in a final pdf generated using LaTeX
+According to the site of Amsterdam Dance Event (ADE), ADE is the most upfront, influential and educational gathering for electronic music and its industry. In 2022 it attracted around 450.000 unique visitors (NL Times, 2022). These people are not only from Amsterdam and therefore there will be a huge demand for different types of housing option, e.g. appartements, villa, etc.
+
+With this huge temporary increase in demand but a relatively stable supply, we could amagine that the price would skyrocket during the event. Therefore, we wanted to research whether there was actually a relationship between ADE and the prices of Airbnb accomodations. In addition to this, we also wanted to investigate whether this relationship would be the same for different types of accomodations, e.g. appartements, villas and hotels. Based on this, we proposed the following research question: What is the relationship between Amsterdam Dance Event (ADE) and the prices of different types of Airbnb accommodations (e.g. private room, apartment, villa) in Amsterdam during the event? 
 
 ## Dependencies
 - R 
@@ -15,9 +14,12 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 - For the `makefile` to work, R, Gnu make and the TeX distribution (specifically `pdflatex`) need to be made available in the system path 
 - Detailed installation instructions can be found here: [tilburgsciencehub.com](http://tilburgsciencehub.com/)
 
+##sources
+- NL Times. (2022, October 24). Amsterdam Dance Event Sets New Visitor Record, Announces Next Year's Dates. Retrieved from https://nltimes.nl/2022/10/24/amsterdam-dance-event-sets-new-visitor-record-announces-next-years-dates.
 
 ## Notes
 - `make clean` removes all unncessary temporary files. 
 - Tested under Linux Mint (should work in any linux distro, as well as on Windows and Mac) 
 - IMPORTANT: In `makefile`, when using `\` to split code into multiple lines, no space should follow `\`. Otherwise Gnu make aborts with error 193. 
 - Many possible improvements remain. Comments and contributions are welcome!
+
