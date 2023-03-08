@@ -30,3 +30,5 @@ data <- rbind(data1, data2, data3, data4)
 # View the merged data frame
 View(data)
 
+#write the data frame "data" to a specified file path and name in CSV format.
+write_csv(data, "data.csv")
