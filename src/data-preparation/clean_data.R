@@ -1,11 +1,7 @@
-# Load merged data 
-load("./gen/data-preparation/temp/data_merged.RData")
+# Load merged df
+load()
 
-# Drop observations with V1 <= -0.9
-df_cleaned <- df_merged[df_merged$V1 > -0.9,]
+# Remove colums: "name", "host_id", neighbourhood_group & few more
+updated_df <- select(df, -name, -host_id, -host_name, -neighbourhood_group, -latitude, - longitude, -number_of_reviews, -last_review, - reviews_per_month, -calculated_host_listings_count, -availability_365, -number_of_reviews_ltm, -license)
 
-# Remove V1
-df_cleaned <- df_cleaned[,c(1,2,4:7)]
 
-# Save cleaned data
-save(df_cleaned,file="./gen/data-preparation/output/data_cleaned.RData")
