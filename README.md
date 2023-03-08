@@ -1,6 +1,6 @@
 # The effect of Amsterdam Dance Event (ADE) on the prices of different types of Airbnb accommodations.
 
-welcome to our Research project!
+welcome to our Research Project!
 
 file:///home/emi/Downloads/ade-foto.jpeg![image](https://user-images.githubusercontent.com/112580804/223731496-5207056b-fed3-40cf-b741-02b7546c5136.png)
 
