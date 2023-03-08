@@ -1,4 +1,4 @@
-# The effect of Amsterdam Dance Event (ADE) and the prices of different types of Airbnb accommodations.
+# The effect of Amsterdam Dance Event (ADE) on the prices of different types of Airbnb accommodations.
 
 welcome to our Research project!
 
@@ -19,7 +19,15 @@ Dependent variable= Price, continuous variable: the listing price of an Airbnb p
 Independent variable= ADE, a dummy variable: whether there is the Amsterdam Event on that day(1) or not (0).
 
 moderating variable= Accommodation type, categorical variable: The type of an Airbnb accommodation.
-(moderating variable= location, categorical variable: Location of Airbnb accommodations.)
+
+
+#Our Hypotheses
+
+H1: The prices of accommodations in Amsterdam during the ADE event will be higher than the prices of accommodations during a comparable time period without the ADE event.
+
+H2: The type of accommodation will moderate the relationship between ADE and accommodation prices. For example, the prices of villas during the ADE event will increase more than the prices of apartments or private rooms.
+
+H3: The interaction between ADE and accommodation type will have a significant impact on accommodation prices. For example, the prices of villas during the ADE event will be higher than the prices of apartments or private rooms, and this difference will be greater than during a comparable time period without the ADE event.
 
 
 
