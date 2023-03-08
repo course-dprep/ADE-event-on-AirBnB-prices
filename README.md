@@ -6,7 +6,7 @@ According to the site of Amsterdam Dance Event (ADE), ADE is the most upfront, i
 
 With this huge temporary increase in demand but a relatively stable supply, we could amagine that the price would skyrocket during the event. Therefore, we wanted to research whether there was actually a relationship between ADE and the prices of Airbnb accomodations. In addition to this, we also wanted to investigate whether this relationship would be the same for different types of accomodations, e.g. appartements, villas and hotels. Based on this, we proposed the following research question: What is the relationship between Amsterdam Dance Event (ADE) and the prices of different types of Airbnb accommodations (e.g. private room, apartment, villa) in Amsterdam during the event? 
 
-file:///home/emi/Downloads/ade-foto.jpeg![image](https://user-images.githubusercontent.com/112580804/223729361-6fd019bc-d474-4ca2-900e-c2ae67be01e7.png)
+image](https://user-images.githubusercontent.com/112580804/223729361-6fd019bc-d474-4ca2-900e-c2ae67be01e7.png)
 
 
 ## Dependencies
