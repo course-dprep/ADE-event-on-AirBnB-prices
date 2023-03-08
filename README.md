@@ -13,8 +13,11 @@ With this huge temporary increase in demand but a relatively stable supply, we c
 ![image](https://user-images.githubusercontent.com/112580804/223733341-4aed6d72-9322-4a68-b0a4-713277790d94.png)
 
 #Variables
+
 Dependent variable= Price, continuous variable: the listing price of an Airbnb per night in euros
-independent variable= ADE, a dummy variable: whether there is the Amsterdam Event on that day(1) or not (0).
+
+Independent variable= ADE, a dummy variable: whether there is the Amsterdam Event on that day(1) or not (0).
+
 moderating variable= Accommodation type, categorical variable: The type of an Airbnb accommodation.
 (moderating variable= location, categorical variable: Location of Airbnb accommodations.)
 
