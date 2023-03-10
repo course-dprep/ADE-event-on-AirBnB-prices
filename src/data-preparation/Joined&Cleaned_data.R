@@ -1,4 +1,5 @@
 library(dplyr)
+library(lubridate)
 
 # Set the URLs for the CSV files
 url1 <- "http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2022-12-05/data/calendar.csv.gz"
@@ -40,14 +41,14 @@ df_a <- rbind(df1,df2)
 df_b <- rbind(df3,df4)
 df <- rbind(df_a, df_b)
 
-
+#Remove colums: "name", "host_id", neighbourhood_group & few more
 updated_df <- select(df, -name, -host_id, -host_name, -neighbourhood_group, -latitude, - longitude, -number_of_reviews, -last_review, - reviews_per_month, -calculated_host_listings_count, -availability_365, -number_of_reviews_ltm, -license)
 
-
+#Only observations of year 2022 of data
 data_filtered <- filter(data, year(ymd(date)) == 2022)
 
 
-#remove column " available"
+#remove column " available" from data_filtered
 data_filtered2 <- select(data_filtered, -available)
 
 
@@ -58,6 +59,9 @@ joined_data <- updated_df %>%
 
 # remove duplicated from joined_data
  deduplicated_joined_data <- distinct( joined_data)
+
+
+
 
 
 #write the data frame "data" to a specified file path and name in CSV format.
