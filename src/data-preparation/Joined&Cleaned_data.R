@@ -64,4 +64,6 @@ joined_data <- updated_df %>%
 
 
 
-#write the data frame "data" to a specified file path and name in CSV format.
+#make dummmy for dates during ADE (=1) and not (=0)
+joined-data$dummy <- ifelse(joined-data$date >= as.Date("2022-10-19") & joined-data$date <= as.Date("2022-10-23"), 1, 0)
+ 
