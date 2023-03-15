@@ -82,3 +82,8 @@ grouped_df2$dummy <- ifelse(grouped_df2$date >= as.Date("2022-10-19") & grouped_
 #print
 print(grouped_df2)
 head(grouped_df2)
+
+#output
+write.csv(grouped_df2, "grouped_df2.csv", row.names = FALSE)
+grouped_df2 <- read.csv("grouped_df2.csv")
+grouped_df2
