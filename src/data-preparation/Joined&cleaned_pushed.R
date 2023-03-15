@@ -76,3 +76,14 @@ if (any(duplicates)) {
 }
 
 
+#make dummmy for dates during ADE (=1) and not (=0)
+grouped_df2$dummy <- ifelse(grouped_df2$date >= as.Date("2022-10-19") & grouped_df2$date <= as.Date("2022-10-23"), 1, 0)
+
+#print
+print(grouped_df2)
+head(grouped_df2)
+
+#output
+write.csv(grouped_df2, "grouped_df2.csv", row.names = FALSE)
+
+
