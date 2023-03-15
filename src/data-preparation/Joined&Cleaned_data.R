@@ -42,28 +42,46 @@ df_b <- rbind(df3,df4)
 df <- rbind(df_a, df_b)
 
 #Remove colums: "name", "host_id", neighbourhood_group & few more
-updated_df <- select(df, -name, -host_id, -host_name, -neighbourhood_group, -latitude, - longitude, -number_of_reviews, -last_review, - reviews_per_month, -calculated_host_listings_count, -availability_365, -number_of_reviews_ltm, -license)
+updated_df <- select(df, -name, -host_id, -host_name, -neighbourhood_group, -latitude, - longitude, -number_of_reviews, -last_review, - reviews_per_month, -calculated_host_listings_count, -availability_365, -number_of_reviews_ltm, -license, -neighbourhood, -minimum_nights)
 
 #Only observations of year 2022 of data
 data_filtered <- filter(data, year(ymd(date)) == 2022)
 
 
-#remove column " available" from data_filtered
-data_filtered2 <- select(data_filtered, -available)
+#remove columns: available, minimum_nights, maximum_nights, adjusted_price from data_filtered
+data_filtered2 <- select(data_filtered, -available, -minimum_nights, - maximum_nights, -adjusted_price)
 
 
 # joined Updated_df and data_filtered2
-joined_data <- updated_df %>% 
-  inner_join(data_filtered2, by = c("id"="listing_id"), suffix = c("_updated_df", "_data_filtered2"), multiple = "all")
+left_joined_data <- data_filtered2 %>%
+  left_join(updated_df, by = c("listing_id"= "id"), suffix = c("_updated_df", "_data_filtered2"), multiple ="all") 
 
 
-# remove duplicated from joined_data
- deduplicated_joined_data <- distinct( joined_data)
+# average price for each day for each accomodation type
+grouped_df2 <- left_joined_data %>%
+  group_by(date, room_type) %>%
+  summarize(
+    avg_price = mean(price_data_filtered2, na.rm = TRUE) # average price for each group
+  ) %>%
+  arrange(date)
+
+# Check for duplicates in grouped_df2
+duplicates <- duplicated(grouped_df2)
+
+# Print the duplicated rows, if any
+if (any(duplicates)) {
+  print(grouped_df2[duplicates, ])
+} else {
+  print("No duplicates found.")
+}
+
+
+
 
 
 
 
 
 #make dummmy for dates during ADE (=1) and not (=0)
-joined-data$dummy <- ifelse(joined-data$date >= as.Date("2022-10-19") & joined-data$date <= as.Date("2022-10-23"), 1, 0)
+#joined-data$dummy <- ifelse(joined-data$date >= as.Date("2022-10-19") & joined-data$date <= as.Date("2022-10-23"), 1, 0)
  
