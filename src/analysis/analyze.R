@@ -1,5 +1,8 @@
 # load 
-load("./gen/analysis/input/data_cleaned.RData")
+#load("./gen/analysis/input/data_cleaned.RData")
+grouped_df2 <- read.csv("grouped_df2.csv")
+grouped_df2
+
 
 # Estimate model 1 
 m1 <- lm(V1 ~ V3 + V4,df_cleaned)
