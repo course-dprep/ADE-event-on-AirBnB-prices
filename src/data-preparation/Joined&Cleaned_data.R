@@ -85,5 +85,3 @@ head(grouped_df2)
 
 #output
 write.csv(grouped_df2, "grouped_df2.csv", row.names = FALSE)
-grouped_df2 <- read.csv("grouped_df2.csv")
-grouped_df2
