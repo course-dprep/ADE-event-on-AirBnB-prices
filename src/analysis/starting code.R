@@ -1,5 +1,5 @@
 install.packages("readr")
 library("readr")
 
-download.file("https://raw.githubusercontent.com/course-dprep/team-assignment-team3/master/data/dataset1/listings.csv", destfile = "listings.csv")
-Listings <- read.csv("listings.csv")
+download.file("https://github.com/course-dprep/team-assignment-team3/blob/master/src/data-preparation/Joined%26Cleaned_data.R", destfile = "grouped_df2.csv")
+grouped_df2 <- read.csv("grouped_df2.csv")
