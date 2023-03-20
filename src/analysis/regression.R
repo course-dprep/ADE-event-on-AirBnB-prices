@@ -10,4 +10,4 @@ lr_model <- lm(avg_price ~ dummy + room_type, data = grouped_df2)
 summary(lr_model)
 
 # Print the summary of the regression model
-summary(lr_model)
+summary(lr_model) 
