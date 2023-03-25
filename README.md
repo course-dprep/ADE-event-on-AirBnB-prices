@@ -44,7 +44,7 @@ H3: The interaction between ADE and accommodation type will have a significant i
 └── make file
 
 
-###### Dependencies
+### Dependencies
 - R 
 - R packages: `install.packages("stargazer")`
 - [Gnu Make](https://tilburgsciencehub.com/get/make) 
