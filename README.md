@@ -29,8 +29,9 @@ H2: The type of accommodation will moderate the relationship between ADE and acc
 
 H3: The interaction between ADE and accommodation type will have a significant impact on accommodation prices. For example, the prices of villas during the ADE event will be higher than the prices of apartments or private rooms, and this difference will be greater than during a comparable time period without the ADE event.
 
-###### Repository overview
+### Repository overview
 
+.
 ├── README.md
 ├── data
 ├── gen
@@ -38,10 +39,11 @@ H3: The interaction between ADE and accommodation type will have a significant i
 │   ├── data-preparation
 │   └── paper
 └── src
-|  ├── analysis
-|  ├── data-preparation
-|  └── paper
-└── make file
+    ├── analysis
+    ├── data-preparation
+    └── paper
+└── makefile
+
 
 
 ### Dependencies
