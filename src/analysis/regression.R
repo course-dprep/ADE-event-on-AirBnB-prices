@@ -1,5 +1,4 @@
 # Load the "stats" package
-install.packages("lmtest")
 library(lmtest)
 library(stats)
 library(dplyr)
@@ -32,6 +31,4 @@ cor(cor_matrix)
 
 ## Homoscedasticity
 bptest(lr_model) # Breach-Pagan test
-
-plot(lr_model, which = 1) # residual plot
 
