@@ -63,7 +63,7 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 
 - R 
    - R Markdown, R script
-   - R packages: Tidyverse, Dplyr, lubridate, lmtests, car, ggplot2, stats
+   - R packages: Tidyverse, Dplyr, lubridate, lmtests, car, ggplot2, stats, readr                     
 - Gnu Make
    - Makefile
 - Git Bash
@@ -71,7 +71,25 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 
 # How to run the project 
 
-To run the entire project, type "make" in the command prompt and run. type make -n beforehand to check what changes will be made.
+0.  Optional step: Fork this repository
+
+1.  Open your command line / terminal (preferably in R) and run the following code:
+
+<!-- -->
+
+    git clone https://github.com/course-dprep/ADE-event-on-AirBnB-prices.git
+
+2.  Set your working directory in R to "To Project Directory" under session and run the following command in your R terminal:
+
+<!-- -->
+
+    make
+
+This will run the entire code and provide you with an R-markdown document (see: src/paper).type make -n beforehand to check what changes will be made.
+
+To clean all the unnecessary data files that were created in this project pipeline, run the following code in the command line / terminal:
+
+    make clean
 
 Sidenotes: 
 - make has to be installed in order for it to work.

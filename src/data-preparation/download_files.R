@@ -3,7 +3,7 @@ library(tidyverse)
 library(lubridate)
 library(readr)
 
-prototype = F # set to TRUE for prototyping
+prototype = TRUE # set to TRUE for prototyping
 n_max = 1E4
 if (prototype==F) n_max = NULL
 
