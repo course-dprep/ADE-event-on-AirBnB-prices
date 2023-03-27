@@ -16,7 +16,7 @@ View(merged_calender_listing)
 lr_model <- lm(avg_price ~ dummy + room_type, data = merged_calender_listing)
 
 # Print the summary of the regression model
-summary(lr_model)
+lr_model_summary <- summary(lr_model)
 
 # Checking assumptions
 
